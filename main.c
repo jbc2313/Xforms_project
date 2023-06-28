@@ -3,12 +3,14 @@
 int main(int argc, char **argv)
 {
     FL_FORM *form;
+    FL_OBJECT *button_one;
+    FL_OBJECT *input_one;
 
     fl_initialize(&argc, argv, 0, 0, 0);
 
     form = fl_bgn_form(FL_UP_BOX, 440, 200);
-    fl_add_button(FL_NORMAL_BUTTON, 20, 20, 110, 40, "Enter the Matrix");
-    fl_add_input(FL_NORMAL_INPUT, 70, 110, 90, 40, "Filename");
+    button_one = fl_add_button(FL_NORMAL_BUTTON, 20, 20, 110, 40, "Enter the Matrix");
+    input_one = fl_add_input(FL_NORMAL_INPUT, 70, 110, 90, 40, "Filename");
     fl_end_form();
 
 
