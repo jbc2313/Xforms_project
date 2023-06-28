@@ -6,8 +6,9 @@ int main(int argc, char **argv)
 
     fl_initialize(&argc, argv, 0, 0, 0);
 
-    form = fl_bgn_form(FL_UP_BOX, 230, 100);
-    fl_add_button(FL_NORMAL_BUTTON, 20, 20, 190, 60, "Enter the Matrix");
+    form = fl_bgn_form(FL_UP_BOX, 440, 200);
+    fl_add_button(FL_NORMAL_BUTTON, 20, 20, 110, 40, "Enter the Matrix");
+    fl_add_input(FL_NORMAL_INPUT, 70, 110, 90, 40, "Filename");
     fl_end_form();
 
 
